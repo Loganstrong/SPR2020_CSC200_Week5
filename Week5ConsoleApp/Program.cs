@@ -12,6 +12,9 @@ namespace Week5ConsoleApp
         {
             SayHello();
             SayGoodbye();
+            string name = " something";
+            SayHelloTo(name);
+            SayGoodbyeTo(name);
         }
 
 
@@ -25,6 +28,17 @@ namespace Week5ConsoleApp
         {
             Console.WriteLine("Goodbye");
 
+        }
+
+        public static void SayHelloTo(string name)
+        {
+            Console.WriteLine("Hello" + name);
+        }
+
+
+        public static void SayGoodbyeTo(string name)
+        {
+            Console.WriteLine("Goodbye" + name);
         }
     }
 }
