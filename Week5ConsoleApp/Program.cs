@@ -15,6 +15,15 @@ namespace Week5ConsoleApp
             string name = " something";
             SayHelloTo(name);
             SayGoodbyeTo(name);
+
+            int left = 25;
+            int right = 99;
+            int middle = Sum(25, 99);
+            Console.WriteLine("left = " + left) ;
+            Console.WriteLine("right = " + right);
+            Console.WriteLine("middle = " + middle);
+            Console.WriteLine("Output of sum= " + middle);
+           
         }
 
 
@@ -39,6 +48,12 @@ namespace Week5ConsoleApp
         public static void SayGoodbyeTo(string name)
         {
             Console.WriteLine("Goodbye" + name);
+        }
+
+        public static int Sum(int left, int right)
+        {
+            return left + right;
+            
         }
     }
 }
