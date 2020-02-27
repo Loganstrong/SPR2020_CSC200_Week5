@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week5ConsoleApp", "Week5ConsoleApp\Week5ConsoleApp.csproj", "{CE1C5197-BF4C-43AF-955A-8C4CAD56B86C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE1C5197-BF4C-43AF-955A-8C4CAD56B86C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE1C5197-BF4C-43AF-955A-8C4CAD56B86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE1C5197-BF4C-43AF-955A-8C4CAD56B86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE1C5197-BF4C-43AF-955A-8C4CAD56B86C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
