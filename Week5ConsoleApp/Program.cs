@@ -23,6 +23,10 @@ namespace Week5ConsoleApp
             Console.WriteLine("right = " + right);
             Console.WriteLine("middle = " + middle);
             Console.WriteLine("Output of sum= " + middle);
+
+            string phrase = "How is your day";
+
+           
            
         }
 
@@ -54,6 +58,22 @@ namespace Week5ConsoleApp
         {
             return left + right;
             
+        }
+
+        public static int Countspaces(string phrase)
+        {
+            
+
+
+            int count = 0;           
+            for (int i = 0; i < phrase.Length; i++)
+            {
+                if (phrase[i].Equals (""))
+                {
+                    count++;
+                }
+            }
+            return count;
         }
     }
 }
