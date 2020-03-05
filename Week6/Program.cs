@@ -9,10 +9,25 @@ namespace Week6
 {
     class Program
     {
+        
+
         static void Main(string[] args)
         {
             int a = 25;
             int b = 23;
+
+            int number = 5;
+            int exponent = 3;
+
+            Console.WriteLine("Power of {0} to {1} = {2}",
+                number, exponent,
+                PowerOf(number, exponent));
+
+
+            Console.WriteLine("Power of {0} to {1} = {2}",
+                number, exponent,
+                RecursiveHelperPower(number, exponent));
+
 
             Console.WriteLine("a: {0},b: {1}", a, b);
             Swap(ref a, ref b);
@@ -31,6 +46,7 @@ namespace Week6
 
             Zero(out a);
             Console.WriteLine("a:{0}", a);
+        
 
 
             // Extract year, month, and day from a date 
@@ -47,6 +63,38 @@ namespace Week6
             
 
         }
+
+
+        private static int RecursiveHelperPower(int number, int exponent)
+        {
+            if (exponent == 0) return 0;
+            return RecursivePowerOf(number, exponent);
+        }
+
+        private static int PowerOf(int  number, int exponent)
+        {
+            if (exponent == 0) return 1;
+            if (exponent == 1) return number;
+            int result = number;
+            for (int power = 1; power < exponent; power++)
+            {
+                result = (result * number);
+            }
+
+            return result;
+             
+        }
+
+        private static int RecursivePowerOf(int a, int b)
+        {
+            if (b == 0) return 1;
+            else
+            {
+                return a *RecursivePowerOf(a, b - 1);
+            }
+        }
+
+    
 
 
 
